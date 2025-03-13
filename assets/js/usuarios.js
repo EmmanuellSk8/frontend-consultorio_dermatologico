@@ -6,7 +6,7 @@ function actualizarEmailDelUsuario() {
 
 async function cargarUsuarios() {
     try {
-        const request = await fetch('api/usuarios', );
+        const request = await fetch('api/usuarios',);
 
 
         const usuarios = await request.json();
@@ -96,7 +96,7 @@ async function editarUsuario(id) {
     });
     const usuario = await request.json();
 
-    const {value: formValues} = await Swal.fire({
+    const { value: formValues } = await Swal.fire({
         title: 'Editar usuario',
         html:
             '<label for="swal-input1">Nombre: &#160</label>' +

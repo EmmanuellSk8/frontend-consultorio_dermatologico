@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+
 }
 
 a {
@@ -146,10 +147,31 @@ h6 {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
+#headerCitas {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  top: 40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+#headerAdmin {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  top: 40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
 @media (max-width: 992px) {
   #header {
     padding: 15px 0;
   }
+
 }
 
 #header.header-scrolled {
@@ -224,12 +246,7 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .appointment-btn {
-    margin: 0 15px 0 0;
-    padding: 6px 15px;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -413,12 +430,6 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .appointment-btn {
-    margin: 0 15px 0 0;
-    padding: 6px 15px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -533,32 +544,116 @@ h6 {
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
+
 }
 
-/**
-* Mobile Navigation 
-*/
-.mobile-nav-toggle {
-  color: #555555;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-}
 
-.mobile-nav-toggle.bi-x {
-  color: #fff;
-}
-
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .navbar ul {
+@media screen and (max-width:1550px) {
+  header .derma {
     display: none;
   }
+}
+
+@media screen and (max-width:1375px) {
+  header .contactoo {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .container {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .utils {
+    display: none;
+  }
+}
+
+@media screen and (max-width:950px) {
+  header .doctores {
+    display: none;
+  }
+}
+
+@media screen and (max-width:810px) {
+  header .tratamientos {
+    display: none;
+  }
+}
+
+@media screen and (max-width:770px) {
+  #header {
+    display: none;
+  }
+
+  #mobile {
+    display: flex !important;
+  }
+
+  header .tratamientos {
+    display: flex;
+  }
+
+  header .doctores {
+    display: flex;
+  }
+
+  header .contactoo {
+    display: flex;
+  }
+}
+
+#mobile {
+  position: fixed;
+  z-index: 1000;
+  display: none;
+}
+
+#menu-mobile {
+  font-size: 2rem;
+  color: #000000;
+}
+
+#menu-mobile-none {
+  margin-left: 6px;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.navbar-mobile {
+  display: none;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  width: 100vh;
+  height: 100vh;
+}
+
+.navbar-mobile a {
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  transition: 300ms;
+  width: fit-content;
+}
+
+.navbar-mobile a:hover {
+  transform: scale(1.1);
+}
+
+
+.navbar-mobile .appointment-btn-mobile {
+  width: 150px;
+  justify-content: center;
+  margin-top: 1rem;
+  background: #3fbbc0;
+  color: #000000;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 14px;
+  display: flex;
 }
 
 /*--------------------------------------------------------------
@@ -599,13 +694,6 @@ h6 {
   padding-bottom: 30px;
   margin-bottom: 50px;
   border-top: 4px solid #3fbbc0;
-}
-
-@media (max-width: 1200px) {
-  #hero .container {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
 }
 
 #hero h2 {
@@ -715,12 +803,6 @@ h6 {
   }
 }
 
-@media (max-width: 768px) {
-  #hero h2 {
-    font-size: 28px;
-  }
-}
-
 @media (min-width: 1024px) {
 
   #hero .carousel-control-prev,
@@ -753,10 +835,6 @@ section {
   transform: scale(1.1);
 }
 
-.section-bg {
-  background-color: #f7fcfc;
-
-}
 
 .section-title {
   text-align: center;
@@ -835,19 +913,6 @@ section {
   content: "/";
 }
 
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
 
 /*--------------------------------------------------------------
 # Featured Services
@@ -954,28 +1019,70 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.about .content h3 {
+.container-about .content h3 {
   font-weight: 600;
   font-size: 26px;
 }
 
-.about .content ul {
+.container-about .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.container-about .content ul li {
   padding-bottom: 10px;
 }
 
-.about .content ul i {
+.container-about .content ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #3fbbc0;
 }
 
-.about .content p:last-child {
+.container-about .content p:last-child {
   margin-bottom: 0;
+}
+
+.container-about {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+  padding: 4rem;
+}
+
+.posicionVideo {
+  width: 900px;
+}
+
+.txt-video {
+  font-size: x-large;
+}
+
+@media screen and (max-width:1650px) {
+  .container-about {
+    display: grid;
+  }
+
+  .posicionVideo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .container-about {
+    padding: 8px;
+  }
+
+  .botonCitaVideo {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:640px) {
+  .txt-video {
+    font-size: 16px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1232,9 +1339,6 @@ section {
 /*--------------------------------------------------------------
 # Departments
 --------------------------------------------------------------*/
-.departments {
-  align-items: center;
-}
 
 .hola {
   position: relative;
@@ -1302,6 +1406,15 @@ section {
   font-family: "arial";
 }
 
+.title-departaments {
+  margin-right: 13rem;
+}
+
+.departments {
+  align-items: center;
+  display: flex;
+}
+
 .departments .nav-link {
   border: 0;
   padding: 20px;
@@ -1346,15 +1459,6 @@ section {
   padding: 0 15px 15px 0;
 }
 
-@media (max-width: 768px) {
-  .departments .tab-pane img {
-    float: none;
-    padding: 0 0 15px 0;
-    max-width: 100%;
-  }
-}
-
-
 .departmenta .tab-pane h3 {
   font-size: 26px;
   font-weight: 600;
@@ -1368,6 +1472,145 @@ section {
 
 .departments .tab-pane p:last-child {
   margin-bottom: 0;
+}
+
+.first-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
+}
+
+.tab-content {
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.imglogo {
+  margin-left: 10rem;
+  max-width: 500px;
+}
+
+
+.container-services {
+  margin-inline: 10rem;
+  display: flex;
+}
+
+
+@media screen and (max-width:1600px) {
+
+  .container-text-services {
+    width: 600px;
+  }
+
+  .imglogo {
+    margin-left: -4rem;
+  }
+}
+
+
+@media screen and (max-width:1515px) {
+
+  .container-text-services {
+    width: 450px;
+  }
+
+}
+
+@media screen and (max-width:1366px) {
+
+  .container-services {
+    display: grid;
+    width: 100%;
+    row-gap: 3rem;
+    justify-items: center;
+  }
+
+  .container-text-services {
+    width: 500px;
+  }
+
+  .imglogo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1111px) {
+
+  .first-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-content {
+    width: 400px;
+  }
+
+  .container-text-services {
+    margin-left: -2rem;
+    margin-top: 2rem;
+  }
+
+  .container-services {
+    width: 100%;
+    justify-items: normal;
+    margin-left: 16rem;
+    margin-top: 2rem;
+  }
+
+  .departments .nav-link {
+    transform: scale(1.35);
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .first-container {
+    margin-left: 1rem;
+  }
+
+  .container-services {
+    margin-left: 8rem;
+  }
+
+  .imglogo {
+    margin-left: .8rem;
+  }
+}
+
+@media screen and (max-width:610px) {
+  .container-services {
+    margin-left: 2rem;
+  }
+
+  .imglogo {
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .container-services {
+    margin-left: -.8rem;
+  }
+
+  .departments .nav-link {
+    transform: scale(1);
+  }
+
+  .tab-content {
+    width: 300px;
+    margin-left: 5rem;
+  }
+
+  .imglogo {
+    margin-left: .4rem;
+  }
+}
+
+@media screen and (max-width:827px) {
+  .roow {
+    justify-content: center;
+    justify-items: center;
+  }
 }
 
 @-webkit-keyframes slide-down {
@@ -1477,15 +1720,13 @@ section {
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
-.doctors .member {
-  margin-bottom: 20px;
-  margin-left: 60px;
+.member {
   overflow: hidden;
   text-align: center;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(63, 187, 192, 0.1);
-  transform: scale(2.5);
+  width: 350px;
 }
 
 .doctors .member .member-img {
@@ -1558,58 +1799,39 @@ section {
   opacity: 1;
 }
 
-.roow {
-  transform: translateX(-10%);
+.doctors {
+  justify-items: center;
+  margin-inline: 2rem;
 }
 
-.doctors section {
-  padding-left: 100px;
+.roow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: calc(450px * 3);
+  row-gap: 2rem;
+  gap: 4rem;
 }
 
 .title-doctors {
   transform: translateX(-12%);
 }
 
-/*--------------------------------------------------------------
-# Gallery
---------------------------------------------------------------*/
-.gallery {
-  overflow: hidden;
-}
-
-.gallery .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #3fbbc0;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3fbbc0;
-}
-
-.gallery .swiper-slide-active {
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .gallery .swiper-wrapper {
-    padding: 40px 0;
+@media screen and (max-width:1250px) {
+  .doctors {
+    justify-items: normal;
   }
+}
 
-  .gallery .swiper-slide-active {
-    border: 6px solid #3fbbc0;
-    padding: 4px;
-    background: #fff;
-    z-index: 1;
-    transform: scale(1.2);
-    margin-top: 10px;
+@media screen and (max-width:450px) {
+  .doctors {
+    margin-inline: 4px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .member {
+    width: 300px;
   }
 }
 
@@ -1928,6 +2150,7 @@ section {
   padding: 0 0 30px 0;
   color: #555555;
   font-size: 14px;
+  bottom: 0;
 }
 
 #footer .footer-top {
@@ -2083,23 +2306,6 @@ section {
   transform: translate(-49%, -49%);
 }
 
-.boton {
-  width: 300px;
-  text-align: center;
-  border-radius: 12px;
-  background-color: #b4b8b9;
-  color: black;
-  height: 45px;
-  transform: translate(500px, 20px);
-}
-
-
-.boton:hover {
-  background-color: #3dd5f3;
-  color: white;
-  transition: 0.7s;
-}
-
 .rtr {
   position: absolute;
   top: 0px;
@@ -2160,12 +2366,6 @@ section {
   color: #3dd5f3;
 }
 
-
-.tab-content {
-  position: relative;
-  padding-left: 10px;
-  transform: translateX(20%);
-}
 
 .form-control {
   display: flex;
@@ -2285,10 +2485,6 @@ section {
   transform: translateX(40%);
 }
 
-.row-doctors {
-  transform: translateX(20%)
-}
-
 .contacto {
   padding: 20px;
 }
@@ -2399,16 +2595,93 @@ section {
   transform: translate(32%, -300%);
 }
 
-.imglogo {
-  position: absolute;
-  max-width: 500px;
-  transform: translate(810px, 200px);
+
+@media screen and (max-width:460px) {
+
+  section .container-form .selectCitas {
+    width: 280px;
+  }
+
+  section .container-form .boton {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width:992px) {
+
+  section .container-form .selectCitas {
+    display: flex;
+  }
+
+  header .citas {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+
+  header .appointment-btn-citas{
+    padding: 6px 16px;
+    margin-left: 10px;
+  }
+
+}
+
+.appointment-btn-citas {
+  margin-left: 25px;
+  background: #3fbbc0;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.appointment-btn-citas:hover {
+  background: #65c9cd;
+  color: #fff;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.container-btn-citas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  margin-top: 1.5rem;
+  width: 300px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #76bcce;
+  color: black;
+  height: 45px;
+  transition: 200ms ease-in-out;
+}
+
+.boton:hover {
+  background-color: #3dd5f3;
+  color: white;
+  transform: scale(1.1);
 }
 
 .selectCitas {
   margin: 10px;
-  width: 800px;
   height: 40px;
+  width: 400px;
   border-radius: 6px;
   cursor: pointer;
   border: solid 1px black;
@@ -2416,10 +2689,6 @@ section {
 
 .selectCitas:hover {
   background-color: #f6f6f6;
-}
-
-.citas {
-  transform: translateX(155%);
 }
 
 .parrafo {
@@ -2432,29 +2701,12 @@ section {
   transform: translate(20px, -7px);
 }
 
-
 .botonBorrar {
   height: 10px;
   width: 15px;
   font-size: 20px;
   position: absolute;
   transform: translate(100px, -6px);
-}
-
-
-.posicionTexto {
-  position: absolute;
-  transform: translate(700px, -10px);
-}
-
-.posicionVideo {
-  position: absolute;
-  transform: translate(-120px, 100px);
-  width: 750px;
-}
-
-.about {
-  height: 950px;
 }
 
 .botonCitaVideo {
@@ -2489,50 +2741,6 @@ section {
 
 .estilos {
   color: black;
-}
-
-#mobile {
-  position: fixed;
-  z-index: 1000;
-  margin-top: 2.5rem;
-  display: none;
-}
-
-#menu-mobile {
-  font-size: 2rem;
-  color: #000000;
-}
-
-.navbar-mobile {
-  display: none;
-  flex-direction: column;
-  margin-left: 1rem;
-  backdrop-filter: blur(10px);
-  width: 100vh;
-}
-
-.navbar-mobile a {
-  padding: 10px;
-  color: rgb(0, 0, 0);
-  transition: 300ms;
-  width: fit-content;
-}
-
-.navbar-mobile a:hover {
-  transform: scale(1.1);
-}
-
-
-.navbar-mobile .appointment-btn-mobile {
-  width: 150px;
-  justify-content: center;
-  margin-top: 1rem;
-  background: #3fbbc0;
-  color: #000000;
-  border-radius: 4px;
-  transition: 0.3s;
-  font-size: 14px;
-  display: flex;
 }
 
 .video {
@@ -2573,9 +2781,6 @@ section {
 
 }
 
-
-@media screen and (max-width:1474px) {}
-
 #heroo {
   width: 100%;
   height: 100vh;
@@ -2608,13 +2813,13 @@ section {
   margin: 1rem;
   width: fit-content;
   border-radius: 8px;
-  padding-inline: 12px; 
+  padding-inline: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
-  
+
 }
 
-.container-btns.index2{
+.container-btns.index2 {
   display: flex;
   position: relative;
 }
@@ -2636,24 +2841,3 @@ section {
 #header2 .logo img {
   max-height: 40px;
 }
-
-/**
-* Appointment Button
-*/
-.appointment-btn {
-  margin-left: 25px;
-  background: #3fbbc0;
-  color: #fff;
-  border-radius: 4px;
-  padding: 8px 25px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  display: inline-block;
-}
-
-.appointment-btn:hover {
-  background: #65c9cd;
-  color: #fff;
-}
-

@@ -2,7 +2,6 @@ const video = document.getElementById('myvideo');
 const header = document.getElementById('header');
 const textContent = document.querySelector('.txt-video');
 
-// Define la función vidPlay() para reproducir el video desde el segundo específico.
 function vidPlay() {
     if (video.paused) {
         // Establece el segundo específico desde el cual deseas iniciar la reproducción.

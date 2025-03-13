@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="utf-8">
@@ -9,16 +9,13 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/c.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -30,7 +27,6 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -41,69 +37,81 @@
         <i class="bi bi-clock"></i> Lunes a Sábados de 8AM to 10PM
       </div>
       <div class="d-flex align-items-center">
-        <i class="bi bi-phone"></i> Llámanos Ahora +57 301-314-3273
+        <i class="bi bi-phone"></i> Llámanos Ahora +57 301-321-4312
       </div>
     </div>
   </div>
 
+  <header id="mobile">
+    <i id="menu-mobile-none" class="bi bi-list" onclick="toggleMenu()"></i>
 
-  <!-- =======este es un comentario====== -->
-  <!-- ======= Header ======= -->
+    <nav id="navbar-mobile" class="navbar-mobile">
+
+      <i id="menu-mobile" class="bi bi-list" onclick="toggleMenu()"></i>
+      <a class="nav-link scrollto home" href="#hero"><img src="assets/img/home-color.png">&nbspInicio</a>
+      <a class="nav-link scrollto services" href="#services"><img
+          src="assets/img/services-color%7D.png">&nbspServicios</a>
+      <a class="nav-link scrollto doctores" href="#Doctor"><img src="assets/img/doctor-color.png">&nbspDoctores</a>
+      <a class="nav-link scrollto tratamientos" href="#departments"><img
+          src="assets/img/tratamientos-color.png">&nbspTratamientos</a>
+      <a class="nav-link scrollto contactoo" href="#contact"><img src="assets/img/contact.png">&nbspContáctenos</a>
+
+      <a href="cita.html" class="appointment-btn-mobile"><span class="">Pedir cita</span></a>
+      <a href="index2.html" class="appointment-btn-mobile"><span class="">Cerrar sesión</span></a>
+
+    </nav>
+  </header>
+
   <header id="header" class="fixed-top">
-    <div class="juiii">
-      <div class="container d-flex align-items-center">
 
-        <div class="consul">
-          <nav id="navbar" class="navbar order-last order-lg-0">
+    <div class="container d-flex align-items-center">
+
+      <nav id="navbar" class="navbar ">
+        <ul>
+
+          <li><a class="derma" href="#hero"><img src="assets/img/CONSULTORIODERMATOLOGICO_LOGO.png"></a></li>
+
+          <li><a class="nav-link scrollto home" href="#hero"><img src="assets/img/home-color.png">&nbspInicio</a></li>
+          <li><a class="nav-link scrollto services" href="#services"><img
+                src="assets/img/services-color%7D.png">&nbspServicios</a></li>
+          <li><a class="nav-link scrollto doctores" href="#Doctor"><img
+                src="assets/img/doctor-color.png">&nbspDoctores</a>
+          </li>
+          <li><a class="nav-link scrollto tratamientos" href="#departments"><img
+                src="assets/img/tratamientos-color.png">&nbspTratamientos</a></li>
+          <li class="dropdown utils"><a href="# "><span><img src="assets/img/uti1.png">&nbsputilidades</span> <i
+                class="bi bi-chevron-down"></i></a>
             <ul>
+              <li><a href="#ubicacion">Ubicación</a></li>
+              <li><a href="#about">Acerca de nosotros</a></li>
+              <li><a href="#preg">Preguntas frecuentes</a></li>
 
-              <li><a class="derma" href="#hero"><img src="assets/img/CONSULTORIODERMATOLOGICO_LOGO.png"></a></li>
-
-
-              <li><a class="nav-link scrollto " href="#hero"><img src="assets/img/home-color.png">&nbspInicio</a></li>
-              <li><a class="nav-link scrollto" href="#services"><img
-                    src="assets/img/services-color%7D.png">&nbspServicios</a></li>
-              <li><a class="nav-link scrollto" href="#Doctor"><img src="assets/img/doctor-color.png">&nbspDoctores</a>
-              </li>
-              <li><a class="nav-link scrollto" href="#departments"><img
-                    src="assets/img/tratamientos-color.png">&nbspTratamientos</a></li>
-              <li class="dropdown"><a href="# "><span><img src="assets/img/uti1.png">&nbsputilidades</span> <i
-                    class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a href="#"><span>Tratramientos</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#ubicacion">Ubicación</a></li>
-                  <li><a href="#about">Acerca de nosotros</a></li>
-                  <li><a href="#preg">Preguntas frecuentes</a></li>
-
-                  <li class="dropdown"><a href="#"><span>Tratramientos</span> <i class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="#departments">Depilación con láser</a></li>
-                      <li><a href="#departments"> Reducción de celulitis</a></li>
-                      <li><a href="#departments">Eliminación de tatuajes</a></li>
-                      <li><a href="#departments">Láser y tratamientos antiarrugas con luz pulsada</a></li>
-                      <li><a href="#departments">Corrección de manchas con crioterapia</a></li>
-                      <li><a href="#departments">Tratamiento de ácido hialurónico</a></li>
-                    </ul>
+                  <li><a href="#departments">Depilación con láser</a></li>
+                  <li><a href="#departments"> Reducción de celulitis</a></li>
+                  <li><a href="#departments">Eliminación de tatuajes</a></li>
+                  <li><a href="#departments">Láser y tratamientos antiarrugas con luz pulsada</a></li>
+                  <li><a href="#departments">Corrección de manchas con crioterapia</a></li>
+                  <li><a href="#departments">Tratamiento de ácido hialurónico</a></li>
                 </ul>
-              </li>
-              <li><a class="nav-link scrollto" href="#contact"><img src="assets/img/contact.png">&nbspContáctenos</a>
-              </li>
             </ul>
-
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
-        </div>
-        <div class="d-flex flex-row consulta">
-          <a target="_blank" href="cita.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Pida una
-              cita</span></a>
-          <a href="index2.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Cerrar
-              sesión</span></a>
-        </div>
+          </li>
+          <li><a class="nav-link scrollto contactoo" href="#contact"><img
+                src="assets/img/contact.png">&nbspContáctenos</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex flex-row consulta">
+        <a target="_blank" href="cita.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Pida una
+            cita</span></a>
+        <a href="index2.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Cerrar
+            sesión</span></a>
       </div>
+
     </div>
+  </header>
 
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
@@ -111,7 +119,6 @@
 
       <div class="carousel-inner" role="listbox">
 
-        <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url(assets/img/eli.jpg)">
           <div class="container">
             <h2>Bienvenido a <span> Consultorio Dermatológico</span></h2>
@@ -120,7 +127,6 @@
           </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="carousel-item" style="background-image: url(assets/img/depilacion.jpg)">
           <div class="container">
             <h2><span> Depilación láser </span></h2>
@@ -131,7 +137,6 @@
           </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="carousel-item" style="background-image: url(assets/img/celulitis.jpg)">
           <div class="container">
             <h2><span>Reducción de celulitis</span></h2>
@@ -198,13 +203,10 @@
       </a>
 
     </div>
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
 
-
-
-    <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
 
@@ -215,27 +217,26 @@
         </div>
 
       </div>
-    </section><!-- End Cta Section -->
+    </section>
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+    <section id="about">
 
+      <div class="section-title">
+        <h2 align="center">Acerca de nosotros</h2>
+        <p>Se necesita un gran esfuerzo y dedicación para cuidar tu piel. Conocemos las necesidades de
+          tu piel y lo que le ayuda a que conste de excelente salud. Cualquiera a quien cualquiera desee, puede
+          iniciar su tratamiento ya, ¿qué estás esperando?.</p>
+      </div>
+      <div class="container-about" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2 align="center">Acerca de nosotros</h2>
-          <p align="justify">Se necesita un gran esfuerzo y dedicación para cuidar tu piel. Conocemos las necesidades de
-            tu piel y lo que le ayuda a que conste de excelente salud. Cualquiera a quien cualquiera desee, puede
-            iniciar su tratamiento ya, ¿qué estás esperando?.</p>
-        </div>
-        <div class="col-lg-6" data-aos="fade-right">
+        <div class="container-video" data-aos="fade-right">
           <div class="posicionVideo">
             <div class="thevideo">
-              <video class="zoom" src="assets/img/2023-10-21%2023-33-16.mkv" height="100%" width="100%" id="myvideo"
+              <video class="zoom" src="assets/img/videos/videoCita.mp4" height="100%" width="100%" id="myvideo"
                 poster="assets/img/posterVideo.png"></video>
               <div class="txt-cont ">
                 <div class="txt-video">
-                  <p style="color: white; font-size: 25px">En el siguiente video, podrás ver cómo pedir una cita.</p>
+                  <p style="color: white;">En el siguiente video, podrás ver cómo pedir una cita.</p>
                   <button class="botonReproducir" onclick="vidPlay()">&#9658;</button>
                   <br>
                   <a href="cita.html" class="botonCitaVideo">Pedir cita</a>
@@ -246,11 +247,12 @@
         </div>
 
         <div class="posicionTexto">
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div class="content" data-aos="fade-left">
             <h3 align="center">Se requiere gran valor para iniciar una decisión que cambiará tu vida.</h3>
             <br>
             <ul>
-              <div align="justify">
+              <div>
+
                 <li><i class="bi bi-check-circle"></i><strong>Nuestra misión</strong> es hacer de este sitio web una
                   aplicación funcional adaptable a cualquier consultorio dermatológico del Valle de Aburrá que desee
                   exponer sus servicios y agilizar los procedimientos que involucren el tratamiento de datos y la
@@ -258,17 +260,18 @@
                   adaptable a cualquier consultorio dermatológico del Valle de Aburrá que desee exponer sus servicios y
                   agilizar los procedimientos que involucren el tratamiento de datos y la solicitud de servicios
                   requeridos por los usuarios.</li>
+
                 <li><i class="bi bi-check-circle"></i><strong>Nuestra visión</strong> es Para las etapas finales de 2023
                   habremos cumplido los objetivos propuestos antes y durante el desarrollo de este sitio web, por lo
                   tanto esperamos que esta aplicación cumpla con los requerimientos necesarios para ser lanzada en la
                   web web.</li>
+
               </div>
             </ul>
+
             <ul>
-              <p>
               <h4 align="center">Nuestros principios y valores</h4>
-              </p>
-              <div align="justify">
+              <div>
                 <li><i class="bi bi-check-circle"><strong>Accesibilidad:</strong> Garantía de que la aplicación sea
                     accesible para todas las personas, incluyendo aquellas con dificultades, mediante el proporciomiento
                     del manual de usuario </i></li>
@@ -282,12 +285,12 @@
             </ul>
           </div>
         </div>
+
       </div>
       </div>
       </div>
     </section>
 
-    <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
 
@@ -339,8 +342,6 @@
       </div>
     </section>
 
-
-    <!-- ======= Services Section ======= -->
     <section id="services" class="services services">
       <div class="container" data-aos="fade-up">
 
@@ -398,202 +399,181 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-    <!-- ======= Doctors Section ======= -->
-    <section id="Doctor" class="doctors section-bgggg">
-      <div class="container" data-aos="fade-up">
+    <section id="Doctor" class="doctors">
+      <div data-aos="fade-up">
 
         <div class="section-title title-doctors">
           <h2 class="doctorse">Doctores</h2>
         </div>
 
         <div class="roow">
-          <div class="d-flex flex-row row-doctors">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Alejandro Rodríguez</h4>
-                  <span>Especialista en reducción de celulitis</span>
-                </div>
+
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="200">
-                <div class="member-img">
-                  <img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>María López</h4>
-                  <span>Especialista en eliminación de tatuajes</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img">
-                  <img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Carlos Pérez</h4>
-                  <span>Especialista en Láser y tratamientos antiarrugas con luz pulsada</span>
-                </div>
-              </div>
+            <div class="member-info">
+              <h4>Alejandro Rodríguez</h4>
+              <span>Especialista en reducción de celulitis</span>
             </div>
           </div>
-          <div class="d-flex flex-row row-doctors">
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="400">
-                <div class="member-img">
-                  <img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Laura Martínez</h4>
-                  <span>Especialista en correción de manchas con crioterapia</span>
-                </div>
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="400">
-                <div class="member-img">
-                  <img src="assets/img/doctors/doctors-5.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Ana García</h4>
-                  <span>Especialista en tratamiento de ácido hialurónico</span>
-                </div>
-              </div>
+            <div class="member-info">
+              <h4>María López</h4>
+              <span>Especialista en eliminación de tatuajes</span>
             </div>
-
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="400">
-                <div class="member-img">
-                  <img src="assets/img/doctors/doctors-6.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Luis González</h4>
-                  <span>Especialista en Depilación con láser</span>
-                </div>
-              </div>
-            </div>
-
-
           </div>
+
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Carlos Pérez</h4>
+              <span>Especialista en Láser y tratamientos antiarrugas con luz pulsada</span>
+            </div>
+          </div>
+
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Laura Martínez</h4>
+              <span>Especialista en correción de manchas con crioterapia</span>
+            </div>
+          </div>
+
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/doctors/doctors-5.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Ana García</h4>
+              <span>Especialista en tratamiento de ácido hialurónico</span>
+            </div>
+          </div>
+
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/doctors/doctors-6.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Luis González</h4>
+              <span>Especialista en Depilación con láser</span>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section><!-- End Doctors Section -->
+    </section>
 
-    <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
-      <div class="container" data-aos="fade-up">
+      <div class="" data-aos="fade-up">
 
-        <div class="section-title trat">
+        <div class="section-title title-departaments">
           <h2>Tratamientos</h2>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="nav nav-tabs">
-              <div class="d-flex flex-row">
-                <div class="d-flex flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                      <h4>Depilación con láser</h4>
-                      <img src="assets/img/depi.jpg" alt="">
+        <div class="container-services" data-aos="fade-up" data-aos-delay="100">
 
-                    </a>
-                  </li>
-                  <li class="nav-item mt-2">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                      <h4>Reducción de celulitis</h4>
-                      <img src="assets/img/celu.jpg" alt="">
-                    </a>
-                  </li>
-                  <li class="nav-item mt-2">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                      <h4>Eliminación de tatuajes</h4>
-                      <img src="assets/img/tatu.jpg" alt="">
-                    </a>
-                  </li>
-                </div>
+          <div class="nav nav-tabs">
+            <div class="first-container">
 
-                <div class="d-flex flex-column hola">
-                  <li class="nav-item mt-2">
-                    <a class="nav-link man" data-bs-toggle="tab" data-bs-target="#tab-4">
-                      <h4>tratamientos antiarrugas</h4>
-                      <img src="assets/img/las.jpg" alt="">
-                    </a>
-                  </li>
-                  <li class="nav-item mt-2">
-                    <a class="nav-link man" data-bs-toggle="tab" data-bs-target="#tab-5">
-                      <h4>Correción de manchas </h4>
-                      <img src="assets/img/man.jpg" alt="">
-                    </a>
-                  </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                  <h4>Depilación con láser</h4>
+                  <img src="assets/img/depi.jpg" alt="">
+                </a>
+              </li>
 
-                  <li class="nav-item mt-2">
-                    <a class="nav-link man" data-bs-toggle="tab" data-bs-target="#tab-6">
-                      <h4>Tratamiento de ácido hialurónico</h4>
-                      <img src="assets/img/acido.jpg" alt="">
-                    </a>
-                  </li>
-                  </ul>
-                </div>
-              </div>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                  <h4>Reducción de celulitis</h4>
+                  <img src="assets/img/celu.jpg" alt="">
+                </a>
+              </li>
+
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                  <h4>Eliminación de tatuajes</h4>
+                  <img src="assets/img/tatu.jpg" alt="">
+                </a>
+              </li>
+
+              <li class="nav-item mt-2">
+                <a class="nav-link man" data-bs-toggle="tab" data-bs-target="#tab-4">
+                  <h4>tratamientos antiarrugas</h4>
+                  <img src="assets/img/las.jpg" alt="">
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link man" data-bs-toggle="tab" data-bs-target="#tab-5">
+                  <h4>Correción de manchas </h4>
+                  <img src="assets/img/man.jpg" alt="">
+                </a>
+              </li>
+
+              <li class="nav-item mt-2">
+                <a class="nav-link man" data-bs-toggle="tab" data-bs-target="#tab-6">
+                  <h4>Tratamiento de ácido hialurónico</h4>
+                  <img src="assets/img/acido.jpg" alt="">
+                </a>
+              </li>
+
+              </ul>
             </div>
           </div>
-          <img class="imglogo" src="assets/img/logo3.png" alt="">
-          <div class="col-lg-8 dep">
+
+          <div class="container-text-services">
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
 
                 <h3 align="center">Depilación láser</h3>
                 <br>
-                <p align="justify">La depilación láser es un procedimiento médico que utiliza un rayo concentrado de luz
+                <p>La depilación láser es un procedimiento médico que utiliza un rayo concentrado de luz
                   (láser) para eliminar el vello no deseado. Durante la depilación láser, un láser emite una luz que es
                   absorbida por el pigmento (melanina) del vello. La energía lumínica se convierte en calor, que daña
                   los sacos en forma de tubo dentro de la piel (folículos pilosos) que producen vellos. Este daño inhibe
@@ -603,7 +583,7 @@
               <div class="tab-pane" id="tab-2">
                 <h3 align="center">Reducción de celulitis</h3>
                 <br>
-                <p align="justify">Reducción o mejora de la celulitis: Aumenta la microcirculación de la zona por lo que
+                <p>Reducción o mejora de la celulitis: Aumenta la microcirculación de la zona por lo que
                   se reduce el volumen de las células grasas y se incrementa el drenaje de líquidos retenidos. Aumento
                   de la firmeza: Al promueve la formación de nuevo colágeno tanto en la piel como en el tejido
                   subcutáneo reduce la flacidez.</p>
@@ -611,7 +591,7 @@
               <div class="tab-pane" id="tab-3">
                 <h3 align="center">Eliminación de tatuajes</h3>
                 <br>
-                <p align="justify">La eliminación de tatuajes es un procedimiento destinado a deshacer tatuajes no
+                <p>La eliminación de tatuajes es un procedimiento destinado a deshacer tatuajes no
                   deseados. Se recurre a técnicas como la cirugía láser, la eliminación quirúrgica y la dermoabrasión
                   para lograrlo. La cirugía láser es popular por su capacidad para romper la tinta del tatuaje con
                   energía láser concentrada. La eliminación quirúrgica y la dermoabrasión son opciones alternativas. La
@@ -621,7 +601,7 @@
               <div class="tab-pane" id="tab-4">
                 <h3 align="center">Láser y tratamientos antiarrugas con luz pulsada</h3>
                 <br>
-                <p align="justify">La luz intensa pulsada, también conocida por sus siglas en inglés, IPL, es una
+                <p>La luz intensa pulsada, también conocida por sus siglas en inglés, IPL, es una
                   tecnología lumínica capaz de eliminar las huellas que deja en nuestra piel el sol, el estrés y el paso
                   de los años. Con su tratamiento la piel de manos, escote, cuello y rostro lucirá más rejuvenecida. Así
                   mismo, la IPL permite la eliminación del molesto vello facial, tanto si es rubio como oscuro, con la
@@ -632,16 +612,17 @@
               <div class="tab-pane" id="tab-5">
                 <h3 align="center">Correción de manchas con crioterapia</h3>
                 <br>
-                <p align="justify">La crioterapia facial es uno de los procesos de aplicación de frío con más beneficios
+                <p>La crioterapia facial es uno de los procesos de aplicación de frío con más beneficios
                   desde el punto de vista estético. No solo incide de forma efectiva en la cara, sino que favorece
                   determinados procesos dermatológicos como la psoriasis o como aliado en el alivio del dolor crónico.
                   Concretamente, con la aplicación de temperaturas muy bajas en la cara, los usuarios buscan un
                   rejuvenecimiento facial natural con una técnica muy eficaz y que cada vez cuenta con más adeptos.</p>
               </div>
+
               <div class="tab-pane" id="tab-6">
                 <h3 align="center">Tratamiento de ácido hialurónico</h3>
                 <br>
-                <p align="justify">Regenera la epidermis de manera eficaz y natural, mejorando el aspecto de la piel y
+                <p>Regenera la epidermis de manera eficaz y natural, mejorando el aspecto de la piel y
                   protegiéndola de los factores externos que la dañan en su día a día.
                   Repara y regenera los tejidos del organismo, ofreciendo un rejuvenecimiento instantáneo en la piel.
                   Se caracteriza por la captación de agua, que afecta a la elasticidad y al volumen de la piel. De este
@@ -649,14 +630,15 @@
                   Renueva las células frenando su envejecimiento, de ahí que este tratamiento sea el preferido en
                   mujeres a partir de los 30 años.</p>
               </div>
+
+              <img class="imglogo" src="assets/img/logo3.png" alt="">
             </div>
           </div>
+
         </div>
       </div>
     </section>
-    <!-- End Departments Section -->
 
-    <!-- ======= Frequently Asked Questioins Section ======= -->
     <section id="preg" class="faq section-bg">
       <div class="container" data-aos="fade-up" align="justify">
 
@@ -736,9 +718,8 @@
         </ul>
       </div>
       </div>
-    </section><!-- End Frequently Asked Questioins Section -->
+    </section>
 
-    <!-- ======= Contact Section ======= -->
     <section id="ubicacion" class="contact">
       <div class="container">
 
@@ -756,56 +737,55 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <section id="contact" class="contact">
-        <div class="container">
+    </section>
 
-          <div class="row mt-5">
+    <section id="contact" class="contact">
+      <div class="container">
 
-            <div class="col-lg-6">
-              <div class="section-title">
-                <h2>Contáctenos</h2>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="info-box">
-                    <i class='bx bx-network-chart'></i>
-                    <h3>Redes sociales</h3>
-                    <br>
-                    <a href="https://twitter.com/ConsultorioDer2" target="_blank" class="twitter  contacto"><i
-                        class="bx bxl-twitter contacto"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100087007223254" target="_blank" class="facebook contacto"><i
-                        class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/dermatologico_e.j.e/" target="_blank" class="instagram contacto"><i
-                        class="bx bxl-instagram"></i></a>
-                    <br>
-                    <div class="d-flex flex-row contactos">
-                      <p class="icon1">Twitter</p>
-                      <p class="icon2">Facebook</p>
-                      <p class="icon3">Instagram</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box mt-4">
-                    <i class="bx bx-envelope"></i>
-                    <h3>Nuestro correo email </h3>
-                    <p> consultoriodermatologico.e.j.e@gmail.com</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box mt-4">
-                    <i class="bx bx-phone-call"></i>
-                    <h3>Llámanos</h3>
-                    <p>+57 301-314-3273</p>
-                  </div>
-                </div>
-              </div>
+        <div class="row mt-5">
 
+          <div class="col-lg-6">
+            <div class="section-title">
+              <h2>Contáctenos</h2>
             </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class='bx bx-network-chart'></i>
+                  <h3>Redes sociales</h3>
+                  <br>
+                  <a href="https://twitter.com/ConsultorioDer2" target="_blank" class="twitter  contacto"><i
+                      class="bx bxl-twitter contacto"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100087007223254" target="_blank"
+                    class="facebook contacto"><i class="bx bxl-facebook"></i></a>
+                  <a href="https://www.instagram.com/dermatologico_e.j.e/" target="_blank" class="instagram contacto"><i
+                      class="bx bxl-instagram"></i></a>
+                  <br>
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Nuestro correo email </h3>
+                  <p> consultorioderma@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Llámanos</h3>
+                  <p>+57 301-321-4312</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-
-  </table>
-
 
   <footer id="footer">
     <div class="footer-top">
@@ -817,8 +797,8 @@
               <h3>Consultorio Dermatológico</h3>
               <p>
 
-                <strong>Teléfono:</strong> +57 301-314-3273<br>
-                <strong>Email:</strong> consultoriodermatologico.e.j.e@gmail.com<br>
+                <strong>Teléfono:</strong> +57 301-321-4312<br>
+                <strong>Email:</strong> consultorioderma@gmail.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="https://twitter.com/ConsultorioDer2" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -858,13 +838,12 @@
 
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -872,7 +851,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/videoDuracion.js"></script>
 </body>
