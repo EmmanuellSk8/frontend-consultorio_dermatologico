@@ -2587,6 +2587,31 @@ section {
 
 }
 
+.container-query{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+@media screen and (max-width:900px) {
+  .container-fluid{
+    display: none;
+  }
+
+  .container-query{
+    display: flex;
+  }
+}
+
+@media screen and (max-width:440px) {
+  #wrapper .navbar-nav{
+    display: none;
+  }
+}
+
 .itemm {
   transform: translateX(40%);
 }

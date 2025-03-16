@@ -22,7 +22,7 @@ async function iniciarSesion() {
         alert("Usuario Logueado")
         localStorage.email = datos.email;
         localStorage.password = datos.password;
-        location.href = "index.html";
+        location.href = "homepage.html";
     } else {
         alert("Usuario o contraseña incorrectos, intente de nuevo");
     }
