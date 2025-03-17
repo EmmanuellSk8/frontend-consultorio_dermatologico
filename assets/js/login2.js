@@ -1,7 +1,7 @@
-const   btnSignIn = document.getElementById("Sign-in"),
-        btnSignUp = document.getElementById("Sign-up"),
-        formRegister = document.querySelector(".register"),
-        formLogin = document.querySelector(".login");
+const btnSignIn = document.getElementById("Sign-in"),
+    btnSignUp = document.getElementById("Sign-up"),
+    formRegister = document.querySelector(".register"),
+    formLogin = document.querySelector(".login");
 
 btnSignIn.addEventListener("click", e => {
     formRegister.classList.add("hide");
@@ -13,6 +13,7 @@ btnSignUp.addEventListener("click", e => {
     formLogin.classList.add("hide");
     formLogin.classList.add("hide")
     formRegister.classList.remove("hide");
+
 
     document.querySelector('.campo span').addEventListener('click', e => {
         const passwordInput = document.querySelector('#password');
@@ -27,3 +28,18 @@ btnSignUp.addEventListener("click", e => {
         }
     });
 })
+
+
+function toggle() {
+
+    const login = document.getElementById("login")
+    const register = document.getElementById("register")
+
+    if (register.style.display == "none") {
+        login.style.display = "none";
+        register.style.display = "flex";
+    } else {
+        login.style.display = "flex";
+        register.style.display = "none";
+    }
+}
