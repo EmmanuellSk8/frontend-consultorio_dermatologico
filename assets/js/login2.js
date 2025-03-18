@@ -16,7 +16,7 @@ btnSignUp.addEventListener("click", e => {
 
 
     document.querySelector('.campo span').addEventListener('click', e => {
-        const passwordInput = document.querySelector('#password');
+        const passwordInput = document.querySelector('password');
         if (e.target.classList.contains('show')) {
             e.target.classList.remove('show');
             e.target.textContent = 'Ocultar';
